@@ -65,7 +65,7 @@ app.post('/products', validateRequest(createProductsSchema), async (req, res) =>
             data: newProducts,
 
         });
-    } catch (error) {
+    } catch (error) {cd 
         console.log("🚀 ~ app.post ~ error:", error)
         res.status(400).json({ message: error.message, code: "ERROR" })
     }
